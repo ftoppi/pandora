@@ -69,9 +69,8 @@ sudo apt install git gcc g++ make cmake autoconf automake libtool python3 libssl
 ```
 
 ```bash
-git clone --recursive https://github.com/apache/incubator-kvrocks.git kvrocks
+git clone --recursive https://github.com/apache/incubator-kvrocks.git kvrocks --branch=2.6 --depth=1
 cd kvrocks
-git checkout 2.6
 ./x.py build
 cd ..
 ```
