@@ -42,13 +42,12 @@ In order to compile and test redis, you will need a few packages:
 
 ```bash
 sudo apt-get update
-sudo apt install build-essential tcl
+sudo apt install build-essential tcl pkg-config
 ```
 
 ```bash
-git clone https://github.com/redis/redis.git
+git clone https://github.com/redis/redis.git --branch=7.2 --depth=1
 cd redis
-git checkout 7.2
 make
 # Optionally, you can run the tests:
 make test
